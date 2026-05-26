@@ -37,9 +37,16 @@ print(statistics.mean(avrg_val))
 
 # превращение минут в часы
 vopros = input("Назови число от 100 до 1000: ")
-print((int(vopros) / 60))
+znach = ((int(vopros) / 60))
+print((znach), "в минутах")
 
 
-vorpos_2 = input("Сколько в году дней?: ")
-result = (((int(vorpos_2) * 24) * 60))
-print(result, "минут в году")
+print("Давай узнаем сколько минут в году?")
+vopros_2 = input("Сколько в году дней?: ")
+vopros_3 = input("сколько минут в часах?: ")
+vopros_4 = input("Сколько в сутках часов?: ")
+otvet = int(vopros_2) * int(vopros_3) * int(vopros_4)
+print((otvet), "минут в году")
+
+
+# 
