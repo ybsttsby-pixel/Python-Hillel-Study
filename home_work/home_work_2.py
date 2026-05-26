@@ -1,13 +1,11 @@
 # квадрат числа
 import math
 slon = input("Введите число: ")
-print(math.sqrt(int(slon)))
+print(int(slon) * int(slon))
 
 
-print(math.sqrt(9))
-
-
-print(3 * 3) # корень с 9
+puk = int(slon)
+print(puk * puk)
 
 
 # среднее значение трех чисел
@@ -99,7 +97,7 @@ else:
     print("(((")
 
 
-    
+
 
 
 
