@@ -1,11 +1,15 @@
 # квадрат числа
+# 1й вариант
 import math
 slon = input("Введите число: ")
 print(int(slon) * int(slon))
 
-
+# 2й вариант
 puk = int(slon)
 print(puk * puk)
+
+# 3й вариант
+print(int(slon) ** 2)
 
 
 # среднее значение трех чисел
