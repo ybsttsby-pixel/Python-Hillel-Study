@@ -1,4 +1,5 @@
-chi = 6754
-print(chi // 4)
-print(chi % 10)
-
+# превращение минут в часы
+# 1 вариант
+vopros = input("Назови число от 100 до 1000: ")
+znach = ((int(vopros) / 60))
+print((znach), "в минутах")

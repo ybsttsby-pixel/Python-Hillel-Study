@@ -41,11 +41,13 @@ print(statistics.mean(avrg_val))
 
 
 # превращение минут в часы
+# 1 вариант
 vopros = input("Назови число от 100 до 1000: ")
 znach = ((int(vopros) / 60))
 print((znach), "в минутах")
 
 
+# 2 вариант
 print("Давай узнаем сколько минут в году?")
 vopros_2 = input("Сколько в году дней?: ")
 vopros_3 = input("сколько минут в часах?: ")
