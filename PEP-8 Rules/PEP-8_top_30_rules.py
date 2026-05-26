@@ -1,3 +1,4 @@
+пук пук
 # "Простой хуже сложного"
 # это из Zen of Python
 import this
