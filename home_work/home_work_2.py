@@ -11,9 +11,9 @@ print(3 * 3) # корень с 9
 
 
 # среднее значение трех чисел
-cifra_1 = input("введите первое число: ")
-cifra_2 = input("введите второе число: ")
-cifra_3 = input("введите третье число: ")
+cifra_1 = input("введите первое любое число: ")
+cifra_2 = input("введите второе любое число: ")
+cifra_3 = input("введите третье любое число: ")
 avrg_val = int(cifra_1) + int(cifra_2) + int(cifra_3)
 print(avrg_val / 3)
 
@@ -36,5 +36,10 @@ print(statistics.mean(avrg_val))
 
 
 # превращение минут в часы
+vopros = input("Назови число от 100 до 1000: ")
+print((int(vopros) / 60))
 
 
+vorpos_2 = input("Сколько в году дней?: ")
+result = (((int(vorpos_2) * 24) * 60))
+print(result, "минут в году")
