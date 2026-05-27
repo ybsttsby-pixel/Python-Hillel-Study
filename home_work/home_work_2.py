@@ -1,6 +1,5 @@
 # квадрат числа
 # 1й вариант
-import math
 slon = input("Введите число: ")
 print(int(slon) * int(slon))
 
@@ -40,23 +39,29 @@ avrg_val = [2, 4, 6]
 print(statistics.mean(avrg_val))
 
 
+# 5й вариант
+cifra_1 = int(input("введите первое любое число: "))
+cifra_2 = int(input("введите второе любое число: "))
+cifra_3 = int(input("введите третье любое число: "))
+print(cifra_1 + cifra_2 + cifra_3)
+
+
 # превращение минут в часы
-# 1 вариант
-vopros = input("Назови число от 100 до 1000: ")
-znach = ((int(vopros) / 60))
-print((znach), "в минутах")
+# 1й варианр
+minuts = int(input("Назови число от 100 до 1000: "))
+hours, minuts = divmod(minuts, 60)
+print(hours,"часа", minuts, 'минут')
 
 
-# 2 вариант
-print("Давай узнаем сколько минут в году?")
-vopros_2 = input("Сколько в году дней?: ")
-vopros_3 = input("сколько минут в часах?: ")
-vopros_4 = input("Сколько в сутках часов?: ")
-otvet = int(vopros_2) * int(vopros_3) * int(vopros_4)
-print((otvet), "минут в году")
+# 2й вариан
+minuts = int(input("Назови число от 100 до 1000: "))
+hours = minuts // 60
+minuts = minuts % 60
+print(hours, 'часов', minuts, 'минут')
 
 
 # расчет скидки
+# 1й вариант
 print("🚨 All Sale- up to 50% 🚨")
 tovari = input("Укажите стомость первого товара: ")
 print("👍")
@@ -74,22 +79,25 @@ else:
     print("😈 u lose 😈",
           (300 - (tovari_total / 100) * 50), "к оплате")
 
-    print("Тест на жадность")
-    tovari_sum = input("Введите стомость товара: ")
-    skidka = input("Какую скидку хотите: от 10 до 100% ?: ")
-    tovari_sum = int(tovari_sum)
-    skidka = int(skidka)
-    if skidka <= 40:
-        print("Good boy!➡️", tovari_sum - skidka, "монеток к оплате")
-    if skidka >= 40:
-        print("Zhadina!➡️", tovari_sum - skidka, "монеток к оплате")
+# 2й вариант
+print("Тест на жадность")
+tovari_sum = input("Введите стомость товара: ")
+skidka = input("Какую скидку хотите: от 10 до 100% ?: ")
+tovari_sum = int(tovari_sum)
+skidka = int(skidka)
+    if skidka <= 49:
+        print("Good boy!➡️", tovari_sum - (tovari_sum * skidka / 100), "монеток к оплате")
+    if skidka >= 51:
+        print("Zhadina!➡️", tovari_sum - (tovari_sum * skidka / 100), "монеток к оплате")
+    if skidka == 50:
+        print("OK!➡️", tovari_sum - (tovari_sum * skidka / 100), "монеток к оплате")
 
 
 # последняя цифра числа
 # возможно я тут что то не понял но кажется этого достаточно
-age = input("Какой у вас рост?: ")
-puk = int(age) % 10
-print("Длинна члена", puk)
+height = int(input("Какой у вас рост?: "))
+item_1 = height % 10
+print("Длинна члена", item_1)
 
 
 # периметр треугольника
@@ -98,12 +106,16 @@ print("Измерили его длину?")
 dlina = input("Введите длину прямоугольника: ")
 print("Измерили его ширину?")
 shirina = input("Введите ширину прямоугольника: ")
-perimetr_1 = 2 * (int(dlina) + int(shirina))
-otvet = input("Хотите узнать результат? Да или Нет?: ")
-if otvet == "Да":
-    print(perimetr_1)
+perimetr = 2 * (int(dlina) + int(shirina))
+otvet = input("Хотите узнать результат? Y или N ?: ")
+if otvet == "Y":
+    print(perimetr)
 else:
-    print("(((")
+    print("Ну, ладно...")
+
+
+# вывод числа в столбик
+
 
 
 
